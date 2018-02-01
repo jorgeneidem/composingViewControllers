@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kvJ-Cl-g4a">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--PlayerOne-->
+        <scene sceneID="Qke-iJ-rFm">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PlayerOne" id="lO0-Lt-UT0" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kIm-3i-nif" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-287" y="-463"/>
+        </scene>
+        <!--PlayerTwo-->
+        <scene sceneID="1dc-Tu-p9D">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PlayerTwo" id="TQx-hi-JZv" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ISX-xz-s3t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="161" y="-463"/>
+        </scene>
+        <!--Multiplayer View Controller-->
+        <scene sceneID="r5x-n6-TXQ">
+            <objects>
+                <viewController id="kvJ-Cl-g4a" customClass="MultiplayerViewController" customModule="composingViewControllers" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gf2-1G-HCl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="csd-zs-SYr">
+                                <rect key="frame" x="16" y="36" width="343" height="90"/>
+                                <subviews>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ORv-5Y-w7C">
+                                        <rect key="frame" x="0.0" y="0.0" width="167.5" height="90"/>
+                                        <connections>
+                                            <segue destination="lO0-Lt-UT0" kind="embed" id="Yyd-lX-cQv"/>
+                                        </connections>
+                                    </containerView>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uwl-aO-d6D">
+                                        <rect key="frame" x="175.5" y="0.0" width="167.5" height="90"/>
+                                        <connections>
+                                            <segue destination="TQx-hi-JZv" kind="embed" id="ouh-2P-qoy"/>
+                                        </connections>
+                                    </containerView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="LYr-nQ-8n8"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9hM-Vo-Lao" firstAttribute="trailing" secondItem="csd-zs-SYr" secondAttribute="trailing" constant="16" id="Ebg-LG-QqI"/>
+                            <constraint firstItem="csd-zs-SYr" firstAttribute="leading" secondItem="9hM-Vo-Lao" secondAttribute="leading" constant="16" id="Ne8-MN-HYu"/>
+                            <constraint firstItem="csd-zs-SYr" firstAttribute="top" secondItem="9hM-Vo-Lao" secondAttribute="top" constant="16" id="t5s-yP-7Js"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9hM-Vo-Lao"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T2j-fD-NB4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-63.200000000000003" y="-57.121439280359823"/>
+        </scene>
+    </scenes>
+</document>

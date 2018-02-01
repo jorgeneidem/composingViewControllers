@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RNM-I4-afS">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Player Score View Controller-->
+        <scene sceneID="W4F-Hq-RP9">
+            <objects>
+                <viewController id="RNM-I4-afS" customClass="PlayerScoreViewController" customModule="composingViewControllers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UZd-L7-OQK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Hn-MD-ghh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KdP-dK-mQ9">
+                                        <rect key="frame" x="16" y="20" width="45" height="21"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zGI-4m-W6g">
+                                        <rect key="frame" x="16" y="43" width="36" height="16"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.42591688370000003" green="0.23613823780000001" blue="0.90451388889999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="KdP-dK-mQ9" secondAttribute="trailing" constant="20" id="Z4u-Sx-Mha"/>
+                                    <constraint firstItem="KdP-dK-mQ9" firstAttribute="leading" secondItem="6Hn-MD-ghh" secondAttribute="leading" constant="16" id="dSN-eg-XmW"/>
+                                    <constraint firstItem="KdP-dK-mQ9" firstAttribute="top" secondItem="6Hn-MD-ghh" secondAttribute="top" constant="20" id="gW7-H8-Bmw"/>
+                                    <constraint firstItem="zGI-4m-W6g" firstAttribute="top" secondItem="KdP-dK-mQ9" secondAttribute="bottom" constant="2" id="iAT-xa-Fcq"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="zGI-4m-W6g" secondAttribute="trailing" constant="16" id="qgc-UR-vJ4"/>
+                                    <constraint firstItem="zGI-4m-W6g" firstAttribute="leading" secondItem="KdP-dK-mQ9" secondAttribute="leading" id="wGw-da-nnH"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tHh-rQ-1rs" firstAttribute="trailing" secondItem="6Hn-MD-ghh" secondAttribute="trailing" id="GW6-ue-zwV"/>
+                            <constraint firstItem="6Hn-MD-ghh" firstAttribute="bottom" secondItem="tHh-rQ-1rs" secondAttribute="bottom" id="Xv7-N4-pq4"/>
+                            <constraint firstItem="6Hn-MD-ghh" firstAttribute="top" secondItem="tHh-rQ-1rs" secondAttribute="top" id="bv1-bz-joM"/>
+                            <constraint firstItem="6Hn-MD-ghh" firstAttribute="leading" secondItem="tHh-rQ-1rs" secondAttribute="leading" id="sJs-k3-9IA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tHh-rQ-1rs"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="90"/>
+                    <connections>
+                        <outlet property="nameLabel" destination="KdP-dK-mQ9" id="poP-dp-x5g"/>
+                        <outlet property="scoreLabel" destination="zGI-4m-W6g" id="hpQ-Cv-S19"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iHT-gY-hX3" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="114" y="116"/>
+        </scene>
+    </scenes>
+</document>
