@@ -13,7 +13,7 @@
         <scene sceneID="nEZ-Qn-p4c">
             <objects>
                 <viewControllerPlaceholder storyboardName="SinglePlayerGame" id="8wU-kk-KYz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Single player" id="2RQ-rO-2aw"/>
+                    <tabBarItem key="tabBarItem" title="Single Player" image="input-icon-user" selectedImage="input-icon-user" id="2RQ-rO-2aw"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0kw-EI-YgQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -31,6 +31,7 @@
                     <connections>
                         <segue destination="8wU-kk-KYz" kind="relationship" relationship="viewControllers" id="VST-U8-0EM"/>
                         <segue destination="8IL-2j-ZCh" kind="relationship" relationship="viewControllers" id="2Z8-51-U4J"/>
+                        <segue destination="2Kz-t2-HnU" kind="relationship" relationship="viewControllers" id="LK2-Um-bB3"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YUl-3m-7d9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -41,11 +42,25 @@
         <scene sceneID="gDu-Ix-aY0">
             <objects>
                 <viewControllerPlaceholder storyboardName="MultiPlayerGame" id="8IL-2j-ZCh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Multi player" id="oY2-UB-3o8"/>
+                    <tabBarItem key="tabBarItem" title="Multi player" image="tab-bar-user-loggedin--active" selectedImage="tab-bar-user-loggedin--active" id="oY2-UB-3o8"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LpS-Ta-0bu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-546" y="0.0"/>
         </scene>
+        <!--TimedMultiPlayerGame-->
+        <scene sceneID="Kmf-dH-83r">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TimedMultiPlayerGame" id="2Kz-t2-HnU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Timed multi" image="tab-bar-user-loggedin--active" id="xC7-Bh-ivr"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZVd-cj-ogw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-515" y="113"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="input-icon-user" width="26" height="33"/>
+        <image name="tab-bar-user-loggedin--active" width="21" height="21"/>
+    </resources>
 </document>

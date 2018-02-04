@@ -18,7 +18,7 @@
             </objects>
             <point key="canvasLocation" x="-287" y="-463"/>
         </scene>
-        <!--Single Player View Controller-->
+        <!--Single player-->
         <scene sceneID="r5x-n6-TXQ">
             <objects>
                 <viewController id="kvJ-Cl-g4a" customClass="SinglePlayerViewController" customModule="composingViewControllers" customModuleProvider="target" sceneMemberID="viewController">
@@ -32,7 +32,7 @@
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ORv-5Y-w7C">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="90"/>
                                         <connections>
-                                            <segue destination="lO0-Lt-UT0" kind="embed" id="Yyd-lX-cQv"/>
+                                            <segue destination="lO0-Lt-UT0" kind="embed" identifier="PlayerOne" id="Yyd-lX-cQv"/>
                                         </connections>
                                     </containerView>
                                 </subviews>
@@ -49,10 +49,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9hM-Vo-Lao"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Single player" image="input-icon-user" id="W0A-7r-KjO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T2j-fD-NB4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-63.200000000000003" y="-57.121439280359823"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="input-icon-user" width="26" height="33"/>
+    </resources>
 </document>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rAV-oN-GHO">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--TimeBar-->
+        <scene sceneID="ESn-4Z-fD6">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TimeBar" id="wLq-po-lmS" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7tO-MP-wG5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-263" y="-468"/>
+        </scene>
+        <!--MultiPlayerScore-->
+        <scene sceneID="ofV-tA-59Z">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MultiPlayerScore" id="gIg-zk-5hU" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H9p-yR-TFU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="219" y="-479"/>
+        </scene>
+        <!--Timed multi-->
+        <scene sceneID="OyV-nq-moF">
+            <objects>
+                <viewController id="rAV-oN-GHO" customClass="TimedMultiplayerViewController" customModule="composingViewControllers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L53-dW-a4A">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oGI-3T-fDU">
+                                <rect key="frame" x="16" y="36" width="343" height="8"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="8" id="qRc-Wc-DgC"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="wLq-po-lmS" kind="embed" identifier="TimeBar" id="Dgy-Up-W70"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hDb-jS-CEx">
+                                <rect key="frame" x="16" y="52" width="343" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="hou-qF-aAn"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="gIg-zk-5hU" kind="embed" identifier="Players" id="YAp-IS-qxf"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hDb-jS-CEx" firstAttribute="top" secondItem="oGI-3T-fDU" secondAttribute="bottom" constant="8" id="5sz-Tl-9WN"/>
+                            <constraint firstItem="2Ci-S3-4TP" firstAttribute="trailing" secondItem="hDb-jS-CEx" secondAttribute="trailing" constant="16" id="DP1-Ec-f2e"/>
+                            <constraint firstItem="2Ci-S3-4TP" firstAttribute="trailing" secondItem="oGI-3T-fDU" secondAttribute="trailing" constant="16" id="TAt-YD-YUc"/>
+                            <constraint firstItem="hDb-jS-CEx" firstAttribute="leading" secondItem="2Ci-S3-4TP" secondAttribute="leading" constant="16" id="dbO-cU-22I"/>
+                            <constraint firstItem="oGI-3T-fDU" firstAttribute="leading" secondItem="2Ci-S3-4TP" secondAttribute="leading" constant="16" id="xxr-4p-spR"/>
+                            <constraint firstItem="oGI-3T-fDU" firstAttribute="top" secondItem="2Ci-S3-4TP" secondAttribute="top" constant="16" id="yxr-jO-JXY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2Ci-S3-4TP"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Timed multi" image="tab-bar-user-loggedin--active" id="Xpd-Nq-w3k"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fLk-08-LAv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-263" y="-22"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tab-bar-user-loggedin--active" width="21" height="21"/>
+    </resources>
+</document>
