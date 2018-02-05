@@ -61,8 +61,8 @@
                     </view>
                     <size key="freeformSize" width="375" height="90"/>
                     <connections>
-                        <outlet property="nameLabel" destination="KdP-dK-mQ9" id="poP-dp-x5g"/>
-                        <outlet property="scoreLabel" destination="zGI-4m-W6g" id="hpQ-Cv-S19"/>
+                        <outlet property="nameLabel" destination="KdP-dK-mQ9" id="wO3-Zm-kbS"/>
+                        <outlet property="scoreLabel" destination="zGI-4m-W6g" id="Fnn-gW-q6M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iHT-gY-hX3" sceneMemberID="firstResponder"/>
