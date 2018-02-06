@@ -7,8 +7,10 @@ import XCTest
 
 class PlayerScoreViewControllerStoryboardTests: XCTestCase {
     
+    // PlayerOne storyboard tests:
+    
     func test_playerOneStoryboardInitionalViewController_isPlayerScoreViewController() {
-        let storyboard = UIStoryboard(name: "PlayerOne", bundle: nil)
+        let storyboard = makePlayerOneStoryboard()
         XCTAssertTrue(storyboard.instantiateInitialViewController() is PlayerScoreViewController)
     }
     
@@ -24,10 +26,33 @@ class PlayerScoreViewControllerStoryboardTests: XCTestCase {
         XCTAssertEqual(vc.scoreLabel?.text, "Some score")
     }
     
+    // PlayerTwo storyboard tests:
+    
+    func test_playerTwoStoryboardInitionalViewController_isPlayerScoreViewController() {
+        let storyboard = makePlayerTwoStoryboard()
+        XCTAssertTrue(storyboard.instantiateInitialViewController() is PlayerScoreViewController)
+    }
+    
+    func test_playerTwoStoryboard_nameSetter_updatesNameLabel() {
+        let vc = makePlayerScoreViewController(storyboard: makePlayerTwoStoryboard())
+        vc.name = "Some name"
+        XCTAssertEqual(vc.nameLabel?.text, "Some name")
+    }
+    
+    func test_playerTwoStoryboard_scoreSetter_updatesScoreLabel() {
+        let vc = makePlayerScoreViewController(storyboard: makePlayerTwoStoryboard())
+        vc.score = "Some score"
+        XCTAssertEqual(vc.scoreLabel?.text, "Some score")
+    }
+    
     // Helpers:
     
     private func makePlayerOneStoryboard() -> UIStoryboard {
         return UIStoryboard(name: "PlayerOne", bundle: nil)
+    }
+    
+    private func makePlayerTwoStoryboard() -> UIStoryboard {
+        return UIStoryboard(name: "PlayerTwo", bundle: nil)
     }
     
     private func makePlayerScoreViewController(storyboard: UIStoryboard) -> PlayerScoreViewController {

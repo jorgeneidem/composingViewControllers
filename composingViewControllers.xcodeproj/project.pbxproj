@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2700931E20283778007E7636 /* composingViewControllersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2700931D20283778007E7636 /* composingViewControllersTests.swift */; };
 		27009326202837B9007E7636 /* PlayerScoreViewControllerStoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27009315202836EE007E7636 /* PlayerScoreViewControllerStoryboardTests.swift */; };
+		2737FDD92028FB8F003868FC /* SinglePlayerViewControllerStoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2737FDD72028FB57003868FC /* SinglePlayerViewControllerStoryboardTests.swift */; };
 		274DFB8C20278EA000C7A1E8 /* TimedMultiPlayerGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 274DFB8B20278EA000C7A1E8 /* TimedMultiPlayerGame.storyboard */; };
 		274DFB8E20278ECC00C7A1E8 /* TimeBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 274DFB8D20278ECC00C7A1E8 /* TimeBar.storyboard */; };
 		274DFB90202791C300C7A1E8 /* TimeBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274DFB8F202791C300C7A1E8 /* TimeBarViewController.swift */; };
@@ -44,6 +45,7 @@
 		2700931B20283778007E7636 /* composingViewControllersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = composingViewControllersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2700931D20283778007E7636 /* composingViewControllersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = composingViewControllersTests.swift; sourceTree = "<group>"; };
 		2700931F20283778007E7636 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2737FDD72028FB57003868FC /* SinglePlayerViewControllerStoryboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePlayerViewControllerStoryboardTests.swift; sourceTree = "<group>"; };
 		274DFB8B20278EA000C7A1E8 /* TimedMultiPlayerGame.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TimedMultiPlayerGame.storyboard; sourceTree = "<group>"; };
 		274DFB8D20278ECC00C7A1E8 /* TimeBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TimeBar.storyboard; sourceTree = "<group>"; };
 		274DFB8F202791C300C7A1E8 /* TimeBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeBarViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				27009315202836EE007E7636 /* PlayerScoreViewControllerStoryboardTests.swift */,
+				2737FDD72028FB57003868FC /* SinglePlayerViewControllerStoryboardTests.swift */,
 			);
 			path = composingViewControllersTests;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2737FDD92028FB8F003868FC /* SinglePlayerViewControllerStoryboardTests.swift in Sources */,
 				2700931E20283778007E7636 /* composingViewControllersTests.swift in Sources */,
 				27009326202837B9007E7636 /* PlayerScoreViewControllerStoryboardTests.swift in Sources */,
 			);
