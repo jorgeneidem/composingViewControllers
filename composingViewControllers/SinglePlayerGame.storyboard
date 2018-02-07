@@ -10,11 +10,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--PlayerOne-->
+        <!--Player-->
         <scene sceneID="Qke-iJ-rFm">
             <objects>
                 <viewControllerPlaceholder storyboardName="PlayerOne" id="lO0-Lt-UT0" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kIm-3i-nif" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="LMh-Do-80e" customClass="SinglePlayerViewControllerStoryboardConfigurator" customModule="composingViewControllers" customModuleProvider="target">
+                    <connections>
+                        <outlet property="player" destination="lO0-Lt-UT0" id="e1w-FC-J6o"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="-287" y="-463"/>
         </scene>
@@ -32,7 +37,7 @@
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ORv-5Y-w7C">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="90"/>
                                         <connections>
-                                            <segue destination="lO0-Lt-UT0" kind="embed" identifier="PlayerOne" id="Yyd-lX-cQv"/>
+                                            <segue destination="lO0-Lt-UT0" kind="embed" identifier="Player" id="Yyd-lX-cQv"/>
                                         </connections>
                                     </containerView>
                                 </subviews>

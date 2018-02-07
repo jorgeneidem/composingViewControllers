@@ -16,6 +16,7 @@
 		274DFB9220279B7B00C7A1E8 /* MultiPlayerScore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 274DFB9120279B7B00C7A1E8 /* MultiPlayerScore.storyboard */; };
 		274DFB9420279F0700C7A1E8 /* TimedMultiplayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274DFB9320279F0700C7A1E8 /* TimedMultiplayerViewController.swift */; };
 		274DFB9620279F8D00C7A1E8 /* MultiplayerScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274DFB9520279F8D00C7A1E8 /* MultiplayerScoreViewController.swift */; };
+		276194F2202AD231006DD496 /* SinglePlayerViewControllerStoryboardConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276194F1202AD231006DD496 /* SinglePlayerViewControllerStoryboardConfigurator.swift */; };
 		860CFB7E2023748E00BD025A /* MultiPlayerGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86CBD8E92023715F0077D088 /* MultiPlayerGame.storyboard */; };
 		86CBD8CA202360CB0077D088 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CBD8C9202360CB0077D088 /* AppDelegate.swift */; };
 		86CBD8CC202360CB0077D088 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CBD8CB202360CB0077D088 /* ViewController.swift */; };
@@ -52,6 +53,7 @@
 		274DFB9120279B7B00C7A1E8 /* MultiPlayerScore.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MultiPlayerScore.storyboard; sourceTree = "<group>"; };
 		274DFB9320279F0700C7A1E8 /* TimedMultiplayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimedMultiplayerViewController.swift; sourceTree = "<group>"; };
 		274DFB9520279F8D00C7A1E8 /* MultiplayerScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplayerScoreViewController.swift; sourceTree = "<group>"; };
+		276194F1202AD231006DD496 /* SinglePlayerViewControllerStoryboardConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePlayerViewControllerStoryboardConfigurator.swift; sourceTree = "<group>"; };
 		86CBD8C6202360CA0077D088 /* composingViewControllers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = composingViewControllers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86CBD8C9202360CB0077D088 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86CBD8CB202360CB0077D088 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				86CBD8E92023715F0077D088 /* MultiPlayerGame.storyboard */,
 				274DFB8B20278EA000C7A1E8 /* TimedMultiPlayerGame.storyboard */,
 				86CBD8DD20236C6D0077D088 /* SinglePlayerViewController.swift */,
+				276194F1202AD231006DD496 /* SinglePlayerViewControllerStoryboardConfigurator.swift */,
 				86CBD8DB202369430077D088 /* MultiPlayerViewController.swift */,
 				274DFB9320279F0700C7A1E8 /* TimedMultiplayerViewController.swift */,
 				274DFB9520279F8D00C7A1E8 /* MultiplayerScoreViewController.swift */,
@@ -272,6 +275,7 @@
 				86CBD8DC202369430077D088 /* MultiPlayerViewController.swift in Sources */,
 				274DFB9420279F0700C7A1E8 /* TimedMultiplayerViewController.swift in Sources */,
 				274DFB9620279F8D00C7A1E8 /* MultiplayerScoreViewController.swift in Sources */,
+				276194F2202AD231006DD496 /* SinglePlayerViewControllerStoryboardConfigurator.swift in Sources */,
 				86CBD8CC202360CB0077D088 /* ViewController.swift in Sources */,
 				86CBD8DE20236C6D0077D088 /* SinglePlayerViewController.swift in Sources */,
 				86CBD8E020236CD20077D088 /* PlayerScoreViewController.swift in Sources */,
